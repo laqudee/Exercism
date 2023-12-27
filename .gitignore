@@ -1,0 +1,11 @@
+node_moudles
+
+cache
+unplugged
+
+*.out
+*.exe
+
+dist
+
+target
