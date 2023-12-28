@@ -8,7 +8,7 @@ bool is_isogram(const char phrase[]) {
     int i = 0;
     char ch = phrase[0];
     while (ch != '\0') {
-      printf("%c, ", ch);
+        printf("%c, ", ch);
         if (isalpha(ch)) {
             int array_index = tolower(ch) - 'a';
             printf("%d, letter_array %d \n", array_index, letter_array[array_index]);
