@@ -43,6 +43,9 @@ int16_t write(circular_buffer_t *buffer, buffer_value_t value) {
 }
 
 int16_t overwrite(circular_buffer_t *buffer, buffer_value_t value) {
+  if (!buffer->full) {
+    return write(buffer, value);
+  }
   buffer->buffer[buffer->tail] = value;
   buffer->tail = (buffer->tail + 1) % buffer->capacity;
   if (buffer->full) {
