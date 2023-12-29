@@ -14,6 +14,12 @@
 - rna-transcription
 - space-age
 - difference-of-squares
+- hamming
+- collatz-conjecture
+- gigasecond
+- armstrong-numbers
+- isogram
+- clock
 
 ## C
 
