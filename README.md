@@ -34,6 +34,8 @@
 - isogram
 - rational-numbers
 - square-root
+- list-ops
+- reverse-string
 
 ## Rust
 
