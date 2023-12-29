@@ -13,6 +13,7 @@
 - resistor-color-trio
 - rna-transcription
 - space-age
+- difference-of-squares
 
 ## C
 
