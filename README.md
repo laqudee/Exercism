@@ -4,22 +4,22 @@
 
 ## TypeScript
 
+- armstrong-numbers
 - Bob
+- clock
+- collatz-conjecture
 - darts
+- difference-of-squares
 - dnd-character
+- gigasecond
+- hamming
+- isogram
 - leap
 - pangram
 - resistor-color-duo
 - resistor-color-trio
 - rna-transcription
 - space-age
-- difference-of-squares
-- hamming
-- collatz-conjecture
-- gigasecond
-- armstrong-numbers
-- isogram
-- clock
 
 ## C
 
@@ -52,14 +52,25 @@
 ## Zig
 
 - armstrong-numbers
+- binary-search
+- bob
 - collatz-conjecture
+- -darts
 - difference-of-squares
+- dnd-character
+- grains
 - hamming
 - isogram
 - leap
 - pangram
+- resistor-color
+- resistor-color-duo
+- rna-transcription
 - scrabble-score
 - space-age
+- sum-of-multiples
+- triangle
+- two-per
 
 ## JavaScript
 
