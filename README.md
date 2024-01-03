@@ -43,12 +43,17 @@
 - beer-song
 - bob
 - clock
+- collatz-conjecture
 - different-of-squares
 - gigasecond
 - grains
 - hamming
+- isogram
 - leap
+- nth-prime
 - pangram
+- prime-factors
+- proverb
 - raindrops
 - reverse-string
 - space-age
