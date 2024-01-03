@@ -26,16 +26,24 @@
 - armstrong-numbers
 - binary-search
 - circular-buffer
+- clock
+- darts
 - difference-of-squares
+- gigasecond
 - grade-school
 - grains
 - hamming
 - hello-world
 - isogram
-- rational-numbers
-- square-root
 - list-ops
+- pangram
+- rational-numbers
+- resistor-color
+- resistor-color-duo
 - reverse-string
+- space-age
+- square-root
+- two-fer
 
 ## Rust
 
@@ -65,7 +73,7 @@
 - binary-search
 - bob
 - collatz-conjecture
-- -darts
+- darts
 - difference-of-squares
 - dnd-character
 - grains
