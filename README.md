@@ -40,14 +40,19 @@
 ## Rust
 
 - armstrong-numbers
+- beer-song
+- bob
 - clock
 - different-of-squares
 - gigasecond
+- grains
 - hamming
 - leap
 - pangram
+- raindrops
 - reverse-string
 - space-age
+- sum-of-multiples
 
 ## Zig
 
