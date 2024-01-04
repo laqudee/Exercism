@@ -95,7 +95,11 @@
 ## JavaScript
 
 - annalyns-infiltrate
+- bird-watcher
 - elyses-enchantments
 - freelancer-rates
 - lasagna
+- mixed-juices
 - poetry-club-door-policy
+- raindrops
+- vehicle-club-door-policy
