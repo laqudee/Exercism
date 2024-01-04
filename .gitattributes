@@ -1,1 +1,1 @@
-c/*/test-framework/*.c inguist-detectable=false
+c/*/test-framework linguist-vendored
