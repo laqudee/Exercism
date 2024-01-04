@@ -16,10 +16,12 @@
 - isogram
 - leap
 - pangram
+- raindrops
 - resistor-color-duo
 - resistor-color-trio
 - rna-transcription
 - space-age
+- triangle
 
 ## C
 
