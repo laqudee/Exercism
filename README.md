@@ -94,11 +94,16 @@
 
 ## JavaScript
 
+- amusement-park
 - annalyns-infiltrate
 - bird-watcher
+- darts
 - elyses-enchantments
 - freelancer-rates
+- gigasecond
+- high-score-board
 - lasagna
+- leap
 - mixed-juices
 - poetry-club-door-policy
 - raindrops
