@@ -47,3 +47,9 @@
 ## Reverse Proxy
 
 - http-proxy-middleware
+
+## Static Actions
+
+- 动静分离
+- CDN
+- Nginx
