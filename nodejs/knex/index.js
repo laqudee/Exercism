@@ -12,6 +12,17 @@ const db = knex({
   connection: config.db,
 })
 
+// 定义表结构
+db.schema.createTable('list', (table) => {
+  table.increments('id')
+  table.integer('age')
+  table.string('name')
+  table.string('hobby')
+  table.timestamps(true, true)
+}).then(() => {
+  console.log('创建成功');
+})
+
 const app = express()
 
 app.use(express.json())
