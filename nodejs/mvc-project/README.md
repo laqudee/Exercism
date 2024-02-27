@@ -1,6 +1,49 @@
 # MVC project
 
-- 学习了express框架，编写接口，mysql数据库读写，knex，prisma ORM框架
+| lib                     | version  |
+| ----------------------- | -------- |
+| nodejs                  | v20.11.0 |
+| npm                     | v10.2.4  |
+| tsx                     | v4.7.1   |
+| typescript              | v5.3.3   |
+| prisma                  | v5.10.2  |
+| express                 | v4.18.2  |
+| inversify               | v6.0.2   |
+| inversify-express-utils | v6.4.6   |
+| reflect-metadata        | v0.2.1   |
+| class-transformer       | v0.5.1   |
+| class-validator         | v0.14.1  |
+
+## Development
+
+```json
+  "scripts": {
+    "dev": "nodemon --watch src/ -e ts --exec tsx ./src/main.ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+```
+
+## VS Code tools（扩展）
+
+- `database client`
+  - 在vscode中操作数据库
+
+- `Rest Client`
+  - `request.http` 模拟客户端发送请求
+
+## link about
+
+[prisma link--how prisma init and using](https://www.prisma.io/docs/getting-started/quickstart)
+
+[tsx link -- how to init and using](https://www.npmjs.com/package/tsx)
+
+- 用来替代 `ts-node`
+  - `ts-node` 在node19以上版本中似乎坏掉了，用tsx替代
+
+[mvc + prisma + typescript + express + lession](https://juejin.cn/post/7337964441613353010)
+
+- 学习express框架，编写接口，mysql数据库读写，knex，prisma ORM框架
 
 ## MVC
 

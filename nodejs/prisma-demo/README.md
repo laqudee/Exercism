@@ -39,6 +39,6 @@
 - 注意`tsconfig.json` 中的一些配置
   - `rootDir: './src'`
   - `outDir: './dist'`
-  - `module: 'esnext'`
+  - `module: 'commonjs'`
   - `target: 'es2016'`
   - others

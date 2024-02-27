@@ -13,7 +13,13 @@ export class UserService {
   }
 
   public async getUserInfo() {
-    const list = await this.PrismaDB.prisma.user.findMany()
+    const list = await this.PrismaDB.prisma.user.findMany(
+      {
+        include: {
+          posts: true
+        }
+      }
+    )
     const total = await this.PrismaDB.prisma.user.count()
     return {
       list,
@@ -37,7 +43,16 @@ export class UserService {
       return dto
     } else {
       const userInfo = await this.PrismaDB.prisma.user.create({
-        data: user
+        data: {
+          name: user.name,
+          email: user.email,
+          posts: {
+            create: {
+              title: '标题',
+              publish: true
+            }
+          }
+        }
       })
       return userInfo
     }
