@@ -76,3 +76,20 @@
 - express
 - mysql2
 - js-yaml
+
+## prisma-demo
+
+- prisma
+- express
+- typescript
+- tsx
+- nodejs V20.11.0
+
+## mvc-project
+
+- mvc
+- ioC
+- DI
+- prisma
+- typeScript
+- express
