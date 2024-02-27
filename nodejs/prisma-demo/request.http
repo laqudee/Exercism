@@ -1,0 +1,26 @@
+# GET http://localhost:3000/ HTTP/1.1
+
+# POST http://localhost:3000/create HTTP/1.1
+# Content-Type: application/json
+
+# {
+#   "name": "礼",
+#   "email": "we2@yui.com"
+# }
+
+# POST http://localhost:3000/update HTTP/1.1
+# Content-Type: application/json
+
+# {
+#   "id": 2,
+#   "name": "礼8001",
+#   "email": "we8001@yui.com"
+# }
+
+
+POST http://localhost:3000/delete HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": 2
+}
