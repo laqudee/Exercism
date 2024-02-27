@@ -2,6 +2,9 @@ import { controller, httpGet as GetMapping, httpPost as PostMapping } from 'inve
 import { inject } from 'inversify'
 import { UserService } from './service'
 import type { Request, Response } from 'express'
+import { JWT } from '../jwt'
+
+const { middleware } = new JWT()
 
 @controller('/user')
 export class UserController {
@@ -9,7 +12,7 @@ export class UserController {
     @inject(UserService) private readonly userService: UserService
   ) { }
 
-  @GetMapping('/index')
+  @GetMapping('/index', middleware())
   public async getIndex(req: Request, res: Response) {
     // console.log(req?.user.id);
     const info = await this.userService.getUserInfo()

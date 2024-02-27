@@ -3,14 +3,14 @@ import { UserDto } from './user.dto'
 import { validate } from 'class-validator'
 import { plainToClass } from 'class-transformer'
 import { PrismaDB } from '../db/index'
+import { JWT } from '../jwt'
 
 @injectable()
 export class UserService {
   constructor(
-    @inject(PrismaDB) private readonly PrismaDB: PrismaDB
-  ) {
-
-  }
+    @inject(PrismaDB) private readonly PrismaDB: PrismaDB,
+    @inject(JWT) private readonly jwt: JWT
+  ) { }
 
   public async getUserInfo() {
     const list = await this.PrismaDB.prisma.user.findMany(
@@ -54,7 +54,10 @@ export class UserService {
           }
         }
       })
-      return userInfo
+      return {
+        ...userInfo,
+        token: this.jwt.createToken(userInfo)
+      }
     }
   }
 }

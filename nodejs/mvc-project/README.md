@@ -13,6 +13,9 @@
 | reflect-metadata        | v0.2.1   |
 | class-transformer       | v0.5.1   |
 | class-validator         | v0.14.1  |
+| passport                | v0.7.0   |
+| passport-jwt            | v4.0.1   |
+| jsonwebtoken            | v9.0.2   |
 
 ## Development
 
@@ -68,3 +71,18 @@
 
 - DI，是实现控制反转的一种具体技术。它通过将组件的依赖关系从组件内部移动到外部容器来实现松耦合。组件不再负责创建或管理它所依赖的其他组件，而是通过构造函数、属性或方法参数等方式将依赖关系注入到组件中。依赖注入可以通过构造函数注入（Constructor Injection）、属性注入（Property Injection）或方法注入（Method Injection）等方式实现。
 
+## JWT
+
+- JSON Web Token，用于在网络应用间传递信息的方式，基于JOSN的安全令牌，用于客户端与服务端
+
+- 组成：（用`.`分开）
+  1. Header，包含令牌的类型和使用的加密算法等信息，Base64编码表示
+  2. Payload，包含身份验证和授权等信息，如用户ID，角色、权限等；Base64
+  3. Signature，使用指定的密钥对头部和负载进行签名，确保令牌的完整性和真实性
+
+- JWT工作流程：
+  1. 用户通过提供有效的凭证进行身份验证
+  2. 服务器验证凭证，并生成一个JWT作为响应。JWT包含了用户的身份信息和其它必要的数据
+  3. 服务器将JWT发送给客户端
+  4. 客户端在后续的请求中，将JWT放入请求头中。
+  5. 服务器接到请求，验证JWT的签名以保证其完整性和真实性

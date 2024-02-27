@@ -11,6 +11,8 @@ import { PostController } from './post/controller'
 import { PrismaClient } from '@prisma/client'
 import { PrismaDB } from './db'
 
+import { JWT } from './jwt/index'
+
 const container = new Container()
 
 // prisma di
@@ -20,6 +22,9 @@ container.bind<PrismaClient>('PrismaClient').toFactory(() => {
   }
 })
 container.bind(PrismaDB).toSelf()
+
+// JWT module
+container.bind(JWT).to(JWT)
 
 // user module
 container.bind(UserService).to(UserService)
@@ -33,6 +38,7 @@ const server = new InversifyExpressServer(container)
 
 server.setConfig(app => {
   app.use(express.json())
+  app.use(container.get(JWT).init())
 })
 
 const app = server.build()
